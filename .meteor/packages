@@ -19,17 +19,9 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 
-# IONICs
-
-meteoric:autoform-ionic
-meteoric:ionic-sass
-meteoric:ionicons-sass
-meteoric:ionic
-
-# OTHERS
-
 aldeed:simple-schema
 aldeed:collection2
-iron:router
 aldeed:autoform
-fourseven:scss
+kadira:flow-router
+zodiase:mdl
+kadira:blaze-layout
