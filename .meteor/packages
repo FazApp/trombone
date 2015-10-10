@@ -23,10 +23,10 @@ aldeed:simple-schema
 aldeed:collection2
 aldeed:autoform
 kadira:flow-router
-zodiase:mdl
 kadira:blaze-layout
 cfs:dropbox
 cfs:standard-packages
 stylus
 gbit:populate
 mdg:camera
+zodiase:mdl
