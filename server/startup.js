@@ -1,3 +1,4 @@
 Meteor.startup(function(){
-	//Here
+	Complaints.populate(5);
+	Schools.populate(5);
 });
