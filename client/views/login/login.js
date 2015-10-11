@@ -3,6 +3,7 @@ Template.login.events({
 		Meteor.loginWithFacebook(function( error ){
 			if( !error ){
 				var data = Meteor.user().services.facebook;
+				FlowRouter.go( Session.get('afterLogin') );
 			}
 		});
 	}
