@@ -1,4 +1,9 @@
 <template name="feed">
 	<img id="image"/>
 	<button id="camera-caller">Denunciar!</button>
+	{{#camera width=500 height=500 config=config onGetPicture=callback }}
+		<div class="camera_container">
+			<button id="get-picture" class="camera_button">FOTO!</button>
+		</div>
+	{{/camera}}
 </template>

@@ -2,7 +2,7 @@ Template.feed.events({
 	'click #camera-caller': function(event, template){
 		var self = this;
 		
-		MeteoricCamera.getPicture({
+		MeteorCamera.getPicture({
 			width: 600,
 			height: 600,
 			quality: 80
