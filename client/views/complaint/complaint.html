@@ -1,0 +1,9 @@
+<template name="complaint">
+	<form>
+		<input name="media" type="file" value={{ photo }}/>
+		<input name="school" placeholder="Qual a sua escola?" type="text"/>
+		<input name="description" placeholder="Qual a sua denúncia?" type="text"/>
+		<input name="complainer" type="text" value={{ currentUser }} hidden/>
+		<button>Denunciar!</button>
+	</form>
+</template>

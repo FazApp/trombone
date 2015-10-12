@@ -3,7 +3,7 @@
 }
 
 .mdl-navigation__link > img {
-	max-height: 50px;
+	max-height: 35px;
 }
 
 .feed__title--void {
@@ -28,4 +28,30 @@
 
 #get-picture > img {
 	width:70%;
+}
+
+.cards {
+	width:100%;
+}
+
+.cards .card {
+	float:left;
+	width:95%;
+	margin:10px 2.5%;
+	background:#fff;
+}
+
+.card__header, .card__title, .card__image, .card__image > img, .card__text, .card__actions {
+	width:100%;
+}
+.card__title-text {
+	font-size: 1.4em;
+	margin:5px 10px;
+}
+.card__text {
+	color:#666;
+}
+.card__text > p {
+	font-size: 1.3em;
+	margin:10px;
 }

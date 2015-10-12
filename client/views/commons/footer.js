@@ -20,8 +20,8 @@ Template.footer.events({
 		
 		navigator.camera.getPicture(
 			function( data ){
-				console.log( data );
-				
+				Session.set('photo', data);
+				FlowRouter.go('/complaint');
 			},
 			function(err){
 				console.log(err);

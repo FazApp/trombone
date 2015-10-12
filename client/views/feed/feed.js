@@ -20,33 +20,6 @@ Template.feed.helpers({
 		}
 		else return [];
 		*/
-		return _.map( Complaints.find().fetch(), function( doc ){
-			doc.school = Schools.findOne( doc.schoolId );
-		});
-	}
-});
-
-Template.feed.events({
-	'touch button': function(){
-		alert('TESTEEEE!!');
-	},
-	'click #get-picture': function(event, template){
-		alert('PORRAAA!');
-		
-		console.log( Template.body );
-
-		var self = this;
-		navigator.camera.getPicture(
-			function( ){
-				console.log( arguments );
-			},
-			function(err){
-				console.log(err);
-			},{
-			quality: options.quality || 49,
-			targetWidth: options.width || 640,
-			targetHeight: options.height || 480,
-			destinationType: Camera.DestinationType.DATA_URL
-		});
+		return Complaints.find();
 	}
 });
