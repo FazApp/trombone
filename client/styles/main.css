@@ -1,0 +1,31 @@
+.mdl-layout__header {
+	background: #efcd0a;
+}
+
+.mdl-navigation__link > img {
+	max-height: 50px;
+}
+
+.feed__title--void {
+	color: #dcd5d3;
+}
+
+.feed__container--void {
+	text-align: center;
+}
+.feed__image--void {
+	width:30%;
+	margin-top: 40px;
+}
+
+#get-picture {
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	z-index:9999;
+	background: #efcd0a;
+}
+
+#get-picture > img {
+	width:70%;
+}

@@ -1,6 +1,6 @@
 Template.feed.helpers({
 	complaints: function(){
-		var locale = Session.get('locale');
+		/*var locale = Session.get('locale');
 		if( locale ){
 			
 			var schools = _.map( Schools.find({
@@ -19,6 +19,10 @@ Template.feed.helpers({
 
 		}
 		else return [];
+		*/
+		return _.map( Complaints.find().fetch(), function( doc ){
+			doc.school = Schools.findOne( doc.schoolId );
+		});
 	}
 });
 
@@ -29,6 +33,8 @@ Template.feed.events({
 	'click #get-picture': function(event, template){
 		alert('PORRAAA!');
 		
+		console.log( Template.body );
+
 		var self = this;
 		navigator.camera.getPicture(
 			function( ){
@@ -40,7 +46,7 @@ Template.feed.events({
 			quality: options.quality || 49,
 			targetWidth: options.width || 640,
 			targetHeight: options.height || 480,
-			destinationType: Camera.DestinationType.FILE_URL
+			destinationType: Camera.DestinationType.DATA_URL
 		});
 	}
 });
