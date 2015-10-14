@@ -23,32 +23,29 @@ Meteor.startup(function(){
 			state: 'PI',
 			country: 'BR'
 		});
-	}
-
-	if( !Complaints.findOne() ){
 
 		Complaints.insert({
 			complainerId: 'uc4XwSDZKycpi8mSr',
 			schoolId: idA,
 			descripition:'Parede Rachada',
-			media: 'tst',
 			position: {
 				lat: -5.8955324,
 				long: -42.6342983 
-			}
+			},
+			status: 0
 		});
 
 		Complaints.insert({
 			complainerId: 'uc4XwSDZKycpi8mSr',
 			schoolId: idB,
 			descripition:'Porta Quebrada',
-			media: 'tst',
 			position: {
 				lat: -5.8955326,
 				long: -42.6342982
-			}
+			},
+			status: 0
 		});
-		
+
 	}
 
 });
