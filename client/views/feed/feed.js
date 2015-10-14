@@ -26,3 +26,14 @@ Template.feed.helpers({
 		});
 	}
 });
+
+Template.feed.events({
+	'click .support-complaint': function( event ){
+		var id = $(event.currentTarget).attr('data-id');
+		Supports.insert({
+			complaintId: id,
+			complainerId: Meteor.userId(),
+			date: new Date()
+		});
+	}
+});
