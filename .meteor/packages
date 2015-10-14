@@ -33,3 +33,5 @@ accounts-facebook
 service-configuration
 accounts-base
 dburles:collection-helpers
+cfs:filesystem
+reactive-var

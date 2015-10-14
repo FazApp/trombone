@@ -1,5 +1,5 @@
 body { 
-	background:#fefefe;
+	background:#eee;
 }
 .mdl-layout__header {
 	background: #efcd0a;
@@ -37,14 +37,19 @@ body {
 	width:100%;
 }
 
-.cards .card {
+.card {
 	float:left;
 	width:95%;
 	margin:10px 2.5%;
 	background:#fff;
 }
 
-.card__header, .card__title, .card__image, .card__image > img, .card__text, .card__actions {
+.card__header,
+.card__title,
+.card__image,
+.card__image > img,
+.card__text,
+.card__actions {
 	width:100%;
 }
 .card__title-text {
@@ -53,6 +58,12 @@ body {
 }
 .card__text {
 	color:#666;
+}
+.card__form {
+	padding: 10px;
+}
+.card__form button {
+	width: 100%;
 }
 .card__text > p {
 	font-size: 1.3em;

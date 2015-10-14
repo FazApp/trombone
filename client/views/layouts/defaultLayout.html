@@ -7,6 +7,8 @@
 				{{> Template.dynamic template=content}}
 			</div>
 		</main>
-		{{> footer}}
+		{{!--#unless isAddComplaint --}}
+			{{> footer}}
+		{{!--/unless--}}
 	</div>
 </template>

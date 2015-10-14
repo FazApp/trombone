@@ -55,3 +55,5 @@ App.configurePlugin('com.phonegap.plugins.facebookconnect', {
 	APP_ID: '766678806788876',
 	API_KEY: 'daae593f38c6e68212fb647445240e66'
 });
+
+App.accessRule("blob:*");

@@ -1,9 +1,23 @@
 <template name="complaint">
-	<form>
-		<input name="media" type="file" value={{ photo }}/>
-		<input name="school" placeholder="Qual a sua escola?" type="text"/>
-		<input name="description" placeholder="Qual a sua denúncia?" type="text"/>
-		<input name="complainer" type="text" value={{ currentUser }} hidden/>
-		<button>Denunciar!</button>
+	<form id="add-complaint-form" class="card mdl-shadow--2dp">
+		<div class="card__image">
+			<img src="{{photo}}"/>
+		</div>
+		<div class="card__form">
+			<div class="mdl-textfield mdl-js-textfield">
+				<textarea class="mdl-textfield__input" type="text" rows= "3" id="description" ></textarea>
+				<label class="mdl-textfield__label" for="sample5">Descrição do problema</label>
+			</div>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" id="school-name" />
+				<label class="mdl-textfield__label" for="school-name">Nome da sua escola</label>
+			</div>
+			<ul class="school-list">
+			{{#each schools}}
+				<li>{{name}}</li>
+			{{/each}}
+			</ul>
+			<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Denunciar!</button>
+		</div>
 	</form>
 </template>
