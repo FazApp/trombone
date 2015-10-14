@@ -20,10 +20,7 @@ Template.feed.helpers({
 		}
 		else return [];
 		*/
-		return _.map( Complaints.find().fetch(), function( complaint ){
-			complaint.schoolName = complaint.getSchool().name;
-			return complaint;
-		});
+		return Complaints.find().fetch();
 	}
 });
 

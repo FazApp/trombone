@@ -5,19 +5,19 @@
 		</div>
 		<div class="card__form">
 			<div class="mdl-textfield mdl-js-textfield">
-				<textarea class="mdl-textfield__input" type="text" rows= "3" id="description" ></textarea>
+				<textarea class="mdl-textfield__input" type="text" rows= "3" name="description" id="description" ></textarea>
 				<label class="mdl-textfield__label" for="sample5">Descrição do problema</label>
 			</div>
 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<input class="mdl-textfield__input" type="text" id="school-name" />
+				<input class="mdl-textfield__input" type="text" name="schoolName" id="school-name" />
 				<label class="mdl-textfield__label" for="school-name">Nome da sua escola</label>
 			</div>
-			<ul class="school-list">
+			<div class="school-list">
 			{{#each schools}}
-				<li>{{name}}</li>
+				<input id="school" type="radio" name="schoolId" value="{{ _id }}"> {{name}}<br/>
 			{{/each}}
-			</ul>
-			<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Denunciar!</button>
+			</div>
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Denunciar!</button>
 		</div>
 	</form>
 </template>

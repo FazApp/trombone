@@ -8,6 +8,16 @@ body {
 .mdl-navigation__link > img {
 	max-height: 35px;
 }
+.mdl-layout__drawer {
+	background:#57362c;
+}
+.mdl-layout__drawer .mdl-navigation__link,
+.mdl-layout__drawer .mdl-layout-title {
+	color:#fff !important;
+}
+.mdl-layout__drawer .mdl-navigation__link:hover {
+	background:#23100b !important;
+}
 
 .feed__title--void {
 	color: #dcd5d3;
@@ -64,6 +74,12 @@ body {
 }
 .card__form button {
 	width: 100%;
+}
+.card__form .mdl-textfield {
+	width:100%;
+}
+.card__form .school-list {
+	margin:10px 0px;
 }
 .card__text > p {
 	font-size: 1.3em;
