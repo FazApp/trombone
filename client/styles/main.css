@@ -18,7 +18,9 @@ body {
 .mdl-layout__drawer .mdl-navigation__link:hover {
 	background:#23100b !important;
 }
-
+.mdl-button--green {
+	color: #a9e000;
+}
 .feed__title--void {
 	color: #dcd5d3;
 }
@@ -29,6 +31,11 @@ body {
 .feed__image--void {
 	width:30%;
 	margin-top: 40px;
+}
+
+.mdl-radio {
+	width:90%;
+	margin:10px;
 }
 
 #get-picture {
@@ -63,11 +70,9 @@ body {
 	width:100%;
 }
 .card__title-text {
-	font-size: 1.4em;
-	margin:5px 10px;
-}
-.card__text {
-	color:#666;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin:10px;
 }
 .card__form {
 	padding: 10px;
@@ -82,6 +87,45 @@ body {
 	margin:10px 0px;
 }
 .card__text > p {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin:10px;
+}
+
+.login {
+	width:90%;
+	margin:0px auto;
+	text-align: center;
+}
+
+.login img {
+	width:100%;
+	margin:40px 0px;
+}
+
+.login .title {
+	color: #57362c;
+	font-weight: bolder;
+}
+
+.login .mdl-button {
+	margin-top: 20px;
+	border:solid 1px #000;
+}
+
+.card__comments {
+	padding:5px 15px;
+}
+.card__comments .mdl-textfield {
+	width:100%;
+}
+.card__comment {
+	border-bottom:solid 1px #eee;
+	padding:10px;
+}
+.card__comment > p {
+	margin:0;
+}
+.card__comment .mdl-button {
+	float:right;
+	margin-top: -25px;
 }

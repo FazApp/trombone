@@ -15,23 +15,40 @@
 				</div>
 				<div class="card__actions">
 					<div class="mdl-grid">
-						<div class="mdl-cell mdl-cell--4-col">
-							<button data-id={{_id}} class="mdl-button mdl-js-button support-complaint">
-								<i class="material-icons">group</i> Apoiar
-							</button>
+						<div class="mdl-cell mdl-cell--4-col-phone">
+							{{#if supported }}
+								<button data-id={{_id}} class="mdl-button mdl-js-button mdl-button--green">
+									<i class="material-icons">done</i> Apoiado
+								</button>
+							{{else}}
+								<button data-id={{_id}} class="mdl-button mdl-js-button support-complaint">
+									<i class="material-icons">group</i> Apoiar
+								</button>
+							{{/if}}
 						</div>
-						<div class="mdl-cell mdl-cell--4-col">
-							<button data-id={{_id}} class="mdl-button mdl-js-button comment-complaint">
+						<div class="mdl-cell mdl-cell--4-col-phone">
+							<button data-id={{_id}} class="mdl-button mdl-js-button show-comment-complaint">
 								<i class="material-icons">comment</i> Comentar
 							</button>
 						</div>
-						<div class="mdl-cell mdl-cell--4-col">
+						<div class="mdl-cell mdl-cell--4-col-phone">
 							<button data-id={{_id}} class="mdl-button mdl-js-button share-complaint">
 								<i class="material-icons">share</i> Compartilhar
 							</button>
 						</div>
 					</div>
 				</div>
+				{{#if showComments }}
+				<div data-id="{{_id}}" class="card__comments">
+					{{#each comments}}
+						{{> comment }}
+					{{/each}}
+					<div class="mdl-textfield mdl-js-textfield">
+						<input type="text" class="mdl-textfield__input comment-complaint"/>
+						<label class="mdl-textfield__label">Comentar...</label>
+					</div>
+				</div>
+				{{/if}}
 			</div>
 		{{/each}}
 		</div>
@@ -39,6 +56,6 @@
 		<img class="feed__image--void" src="/icone_mark.png"/>
 		<h2 class="feed__title--void">Faça sua denúncia</h2>
 	{{/if}}
-	<!--<button id="get-picture">Denunciar!</button>-->
 	</div>
+	{{> footer}}
 </template>

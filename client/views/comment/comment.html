@@ -1,0 +1,10 @@
+<template name="comment">
+	<div class="card__comment">
+		<p>{{ text }}</p>
+		{{#if isOwnerComment _id }}
+			<button data-id="{{_id}}" class="remover mdl-button mdl-js-button mdl-button--icon">
+				<i class="material-icons">close</i>
+			</button>
+		{{/if}}
+	</div>
+</template>

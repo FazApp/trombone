@@ -14,7 +14,10 @@
 			</div>
 			<div class="school-list">
 			{{#each schools}}
-				<input id="school" type="radio" name="schoolId" value="{{ _id }}"> {{name}}<br/>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="{{_id}}">
+					<input type="radio" id="{{_id}}" class="mdl-radio__button" name="schoolId" value="{{_id}}"/>
+					<span class="mdl-radio__label">{{ name }}</span>
+				</label><br/>
 			{{/each}}
 			</div>
 			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Denunciar!</button>
