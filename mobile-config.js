@@ -35,8 +35,7 @@ App.launchScreens({
 	'ipad_portrait_2x': 'resources/splash/splash-768x1024@2x.png',
 	'ipad_landscape': 'resources/splash/splash-1024x768.png',
 	'ipad_landscape_2x': 'resources/splash/splash-1024x768@2x.png',
-
-	
+	*/
 	'android_ldpi_portrait': 'resources/splash/splash-200x320.png',
 	'android_ldpi_landscape': 'resources/splash/splash-320x200.png',
 	'android_mdpi_portrait': 'resources/splash/splash-320x480.png',
@@ -45,11 +44,11 @@ App.launchScreens({
 	'android_hdpi_landscape': 'resources/splash/splash-800x480.png',
 	'android_xhdpi_portrait': 'resources/splash/splash-720x1280.png',
 	'android_xhdpi_landscape': 'resources/splash/splash-1280x720.png'
-	*/
 });
 
 App.setPreference('BackgroundColor', '0xffffffff');
 App.setPreference('HideKeyboardFormAccessoryBar', true);
+App.setPreference('Orientation', 'portrait');
 
 App.configurePlugin('com.phonegap.plugins.facebookconnect', {
 	APP_ID: '766678806788876',
